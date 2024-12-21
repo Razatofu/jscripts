@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSCRIPT</title>
+</head>
+<body>
+    <H1> java script alerts<br>
+    happy coding</H1>
+    <script src="abc.js">
+        
+    </script>
+</body>
+</html>
+
+
+  
+</head>
+<body>
+
+<button onclick="showAlerts()">Show Alerts</button>
+
+
+
+<script>
+  // Example data (could be rows in a table, or an array of objects)
+  const data = [
+    { id: 1, value: 'Apple' },
+    { id: 2, value: 'Banana' },
+    { id: 3, value: 'Orange' }
+  ];
+
+  function showAlerts() {
+    // Display first alert for the value in the first row/column
+    alert('First Pop-up: ' + data[0].value); // For example, Apple
+
+    // Display second alert for the value in the second row/column
+    alert('Second Pop-up: ' + data[1].value); // For example, Banana
+  }
+</script>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Alert Popup</title>
+</head>
+<body>
+
+<button onclick="showAlert()">Click me</button>
+
+<script>
+  function showAlert() {
+    alert('This is a simple alert popup!');
+  }
+</script>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Custom Popup</title>
+  <style>
+    /* The Modal (background) */
+    .modal {
+      display: none; /* Hidden by default */
+      position: fixed;
+      z-index: 1; /* Sit on top */
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5); /* Black background with transparency */
+    }
+
+    /* Modal Content */
+    .modal-content {
+      background-color: white;
+      margin: 15% auto;
+      padding: 20px;
+      border: 1px solid #888;
+      width: 80%;
+      text-align: center;
+    }
+
+    /* Close Button */
+    .close {
+      color: #aaa;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+      color: black;
+      text-decoration: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Button to trigger modal -->
+<button onclick="showModal()">Click me for custom popup</button>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <p>This is a custom popup without the default text!</p>
+  </div>
+
+</div>
+
+<script>
+  // Get the modal
+  var modal = document.getElementById('myModal');
+
+  // Get the <span> element that closes the modal
+  var span = document.getElementsByClassName('close')[0];
+
+  // Function to show the modal
+  function showModal() {
+    modal.style.display = "block";
+  }
+
+  // Function to close the modal
+  function closeModal() {
+    modal.style.display = "none";
+  }
+
+  // Close the modal if clicked outside of it
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+</script>
+
+</body>
+</html>
+
+
